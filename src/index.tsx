@@ -7,7 +7,7 @@ import { configureGlobalInjector, Injector } from 'plume-ts-di';
 import './polyfill-loader';
 import installServicesModule from './services/services-module';
 import installComponentsModule from './components/components-module';
-import App from './components/App';
+import App from './components/app/App';
 import installApiModule from './api/api-module';
 import SessionService from './services/session/SessionService';
 import installI18nModule from './i18n/i18n-module';

@@ -87,7 +87,7 @@ function visitSourceFile(
 
     // replace the module specifier
     return ts.factory.updateImportDeclaration(node, node.decorators, node.modifiers, node.importClause,
-      ts.factory.createStringLiteral(`./${replacePath}`, true), node.assertClause);
+      ts.factory.createStringLiteral(`./${replacePath}`, true));
   }
 }
 

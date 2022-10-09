@@ -2,12 +2,12 @@ import React from 'react';
 import { useObservable } from 'micro-observables';
 import { Route, Switch } from 'react-router-dom';
 import { Logger } from 'simple-logging-system';
-import Header from './layout/Header';
-import GlobalErrorBoundary from './theme/GlobalErrorBoundary';
-import LocaleService from '../i18n/locale/LocaleService';
-import initializeLocalizedDate from '../i18n/messages/LocalizedDate';
-import Home from './pages/Home';
+import Header from './../layout/Header';
+import GlobalErrorBoundary from './../theme/GlobalErrorBoundary';
+import LocaleService from '../../i18n/locale/LocaleService';
+import initializeLocalizedDate from '../../i18n/messages/LocalizedDate';
 import scss from './app.module.scss';
+import ConvertToXlsx from "../pages/home/ConvertToXlsx";
 
 const logger = new Logger('App');
 
@@ -31,7 +31,7 @@ export default class App {
         <div className={scss.contentLayout}>
           <Switch>
             <Route>
-              <Home />
+              <ConvertToXlsx />
             </Route>
           </Switch>
         </div>
